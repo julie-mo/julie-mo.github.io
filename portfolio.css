@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding:0px;
+    margin:0px;
+    max-width:100vw;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+h1 {
+    color: #404040;
+}
+.namecolor{
+    color: rgb(234, 84, 79);
+}
+
+.hello{
+    font-size: 160%;
+}
+#loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#spinner {
+    animation: rotate 0.56s infinite linear;
+    width:50px;
+    height:50px;
+    border:12px solid rgb(234, 84, 79);
+    border-bottom:12px solid #fff;
+    border-radius:50%;
+    margin:0;
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+header {
+    width:92vw;
+    padding:6vh 4vw;
+    position:fixed;
+    font-weight:bold;
+    background:transparent;
+    color:#fff;
+    transition:0.4s ease-in-out;
+    z-index:2;
+}
+header table {
+    width:100%;
+}
+#logo {
+    width:20%;
+}
+#navigation {
+    width:80%;
+}
+#magnify {
+    width:100vw;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.92);
+    position:fixed;
+    z-index:4;
+    display:none;
+    flex-direction: column;
+    justify-content:center;
+}
+#magnify h1 {
+    position:absolute;
+    top:0;
+    right:0;
+    margin:20px 40px;
+    color:#fff;
+    transition:0.4s ease-in-out;
+}
+#magnify h1:hover{
+    color:rgb(234, 84, 79);
+    cursor:pointer;
+}
+#img_here {
+    width:90%;
+    height:90%;
+    background-size:contain !important;
+    background-repeat:no-repeat !important;
+    margin:0px auto;
+}
+#logo {
+    font-size:24px;
+    color:rgb(234, 84, 79);
+}
+#navigation {
+    text-align:right;
+}
+#navigation a {
+    color:inherit;
+    text-decoration:none;
+    padding:5px 10px;
+    border-bottom:2px solid transparent;
+    margin-left:4vw;
+    transition:0.4s ease-in-out;
+}
+#navigation a:hover{
+    border-bottom:2px solid #fff;
+}
+#top_part {
+    width:100%;
+    border:2vh solid #fff;
+}
+#top_part tr td { /* homepage */
+    width:40%; /* how much the right image takes up */
+}
+#about { /* left side of homepage */
+	width: 60% !important;
+    height:95vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    padding:0px 20%;
+}
+#about h1 { /* hello i'm julie mo */
+    font-size:45px;
+    word-wrap:break-word;
+    padding-left: 5%;
+    padding-bottom: 2vh;
+    margin-bottom: 0px;
+}
+#about h4 { /* junior software dev */
+    color: #666666;
+    margin-top: 0px;
+    margin-bottom: 7vh;
+    padding-left: 5%;
+}
+#about a { /* buttons and social icons*/
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+}
+#btn { /* the entire button line */
+    width: 100%;
+	max-width: 550px;
+    white-space: nowrap;
+}
+#btn tr {
+	display: inline-flex;
+	width: 100%;
+}
+#btn tr td{
+	margin-bottom: 2.5vh;
+}
+#icon { /* the entire icon line */
+    margin-top:3vh;
+    width: 70%;
+    max-width: 380px;
+}
+#icon tr td { /* individual icons */
+    text-align:left;
+    width: 20% !important;
+}
+
+.social {
+    color:rgb(234, 84, 79);
+    font-size:23px;
+    padding:12px 17px;
+    border-radius:50%;
+    background:#FFF;
+    transition:0.4s ease-in-out;
+    font-weight:bold;
+    margin:0px 8px;
+}
+.social:hover { 
+    cursor: pointer;
+    color:#fff;
+    background:rgb(234, 84, 79);
+    box-shadow:0px 10px 30px rgba(255, 66, 107,0.8);
+}
+.buttons {
+    font-size:18px;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(234, 84, 79);
+    border:3px solid rgb(234, 84, 79);
+    padding:8px 3vw;
+    width:50%;
+    border-radius:80px;
+    font-weight:bold;
+    margin:2vh;
+    margin-left: 0px;
+    margin-right: 4vw;
+    transition:0.4s ease-in-out;
+}
+.buttons:hover {
+    box-shadow:0px 10px 30px rgba(234, 84, 79, 0.8);
+    cursor:pointer;
+    color:#fff;
+    background:rgb(234, 84, 79);
+}
+#particles-js {
+    width:100%;
+    height:95vh;
+    background:linear-gradient(0deg,rgba(234, 84, 79, 1),rgba(255, 102, 102, 1));
+        /*, url("https://images.unsplash.com/photo-1524797905120-92940d3a18d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60") center center;*/
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+#work {
+    width:92vw;
+    padding:6vh 4vw;
+    font-weight:bold;
+}
+#work h1 {
+    padding:5px 0px;
+    border-bottom:4px solid rgb(234, 84, 79);
+    width:6%;
+}
+#photos {
+    width:100%;
+    columns:3;
+    column-gap:4%;
+    z-index:1;
+    transition:0.4s ease-in-out;
+}
+#photos img {
+    width:100%;
+    height:auto;
+    margin:4.5% 0px;
+    transition:0.4s ease-in-out;
+}
+#photos img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#bio {
+    width:92vw;
+    padding:6vh 4vw;
+    font-weight:bold;
+}
+#bio h1 {
+    padding:5px 0px;
+    border-bottom:4px solid rgb(234, 84, 79);
+    width:8%;
+}
+#bio p {
+    color:#666666;
+    margin-left: 3%;
+}
+#contact {
+    width:92vw;
+    padding:6vh 4vw;
+}
+#contact h1 {
+    padding:5px 0px;
+    border-bottom:4px solid rgb(234, 84, 79);
+    width:10%;
+}
+#contact table {
+    width:100%;
+}
+#contact table tr td {
+    width:50%;
+}
+#inner_div table{
+    width:100%;
+}
+#inner_div table tr td{
+    font-weight:bold;
+}
+#inner_table tr td{
+    padding:10px 20px !important;
+    color: #666666;
+    margin-left: 3%;
+}
+#address {
+    position:relative;
+    top:-25px;
+    left:30px;
+}
+#footer {
+    width:100%;
+    padding:10vh 0px;
+    text-align:center;
+    font-weight:bold;
+}
+#footer a {
+    color:rgb(234, 84, 79);
+    text-decoration:none;
+}
+::placeholder {
+    color:#000;
+}
+button:focus {
+    outline:none;
+}
+::-webkit-scrollbar {
+    width:5px;
+    height:5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0,0.8); 
+}
+
+@media (max-width: 1000px){
+    #photos {
+        columns:2;
+        column-gap:5%;
+    }
+    #photos img {
+        margin:2% 0px;
+    }
+    #photos img:hover {
+        transform: scale(1);
+        cursor: pointer;
+    }
+    #particles-js {
+        position: relative;
+        height: 100vh;
+        animation: none;
+        z-index: 1;
+        background: #ffffff;
+    }
+    #top_part {
+        border:0px;
+    }
+    #top_part tr td{
+        width:100%;
+        text-align:center;
+    }
+    #about {
+        width:100% !important;
+        max-width:100vw;
+        height:75vh;
+        padding-top:20vh !important;
+        text-align:center;
+        padding:0px 0%;
+        position: absolute;
+        z-index: 2;
+    }
+    #about h1, #about h4{
+        padding-left: 0%;
+    }
+
+    #about table {
+        width:100%; /* holy shit idk how this works but it does */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about table tr td {
+        text-align:center;
+    }
+    #btn tr{
+    	display: inline-flex;
+    	width: inherit;
+    	margin-bottom: 1.5vh;
+    	padding: 1.5vw;
+    	margin-left: auto;
+        margin-right: auto;
+    }
+	.buttons {
+        padding:8px 5vw;
+        margin:4vh 1vw;
+        box-shadow:0px 10px 20px rgba(234, 84, 79, 0.8);
+        background:rgb(234, 84, 79);
+        color:#fff;
+    }
+    .buttons:hover {
+        box-shadow:0px 10px 40px rgba(234, 84, 79, 0.8);
+        cursor:pointer;
+    }
+    #contact table tr td {
+        width:100%;
+        display:block;
+    }
+    #inner_table tr td{
+        padding:10px 0px !important;
+    }
+    #work h1 {
+        width:19%;
+    }
+    #bio h1 {
+        width:25%;
+    }
+    #contact h1 {
+        width:33%;
+    }
+    header {
+        width: 100%;
+        display: center;
+        padding:4vh 0vw;
+        position:absolute;
+        z-index: 5;
+    }
+    #header table tr td {
+        width:100%;
+        display:block;
+        text-align:center;
+        padding:15px 0px;
+    }
+    #navigation a {
+        color:#666666;
+    }
+    #navigation a:hover{
+        color: #333333;
+        border-bottom:2px solid rgb(234, 84, 79);
+    }
+
+}
+
+@media (max-width: 722px){
+    #photos {
+        columns:1;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
