@@ -12,7 +12,7 @@ h1 {
     color: #404040;
 }
 .namecolor{
-    color: rgb(234, 84, 79);
+    color: rgb(114, 168, 113);
 }
 
 .hello{
@@ -33,7 +33,7 @@ h1 {
     animation: rotate 0.56s infinite linear;
     width:50px;
     height:50px;
-    border:12px solid rgb(234, 84, 79);
+    border:12px solid rgb(114, 168, 113);
     border-bottom:12px solid #fff;
     border-radius:50%;
     margin:0;
@@ -80,7 +80,7 @@ header table {
     transition:0.4s ease-in-out;
 }
 #magnify h1:hover{
-    color:rgb(234, 84, 79);
+    color:rgb(114, 168, 113);
     cursor:pointer;
 }
 #img_here {
@@ -92,7 +92,7 @@ header table {
 }
 #logo {
     font-size:24px;
-    color:rgb(234, 84, 79);
+    color:rgb(114, 168, 113);
 }
 #navigation {
     text-align:right;
@@ -114,6 +114,14 @@ header table {
 }
 #top_part tr td { /* homepage */
     width:40%; /* how much the right image takes up */
+}
+#particles-js {
+    width:100%;
+    height:95vh;
+    background:linear-gradient(0deg,rgba(114, 168, 113, 1),rgba(58, 95, 58, 1));
+        /*, url("https://images.unsplash.com/photo-1524797905120-92940d3a18d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60") center center;*/
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 #about { /* left side of homepage */
     width: 60% !important;
@@ -165,7 +173,7 @@ header table {
 }
 
 .social {
-    color:rgb(234, 84, 79);
+    color:rgb(114, 168, 113);
     font-size:23px;
     padding:12px 17px;
     border-radius:50%;
@@ -177,14 +185,14 @@ header table {
 .social:hover { 
     cursor: pointer;
     color:#fff;
-    background:rgb(234, 84, 79);
-    box-shadow:0px 10px 30px rgba(255, 66, 107,0.8);
+    background:rgb(114, 168, 113);
+    box-shadow:0px 10px 30px rgba(78, 126, 78, 0.8);
 }
 .buttons {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
-    color:rgb(234, 84, 79);
-    border:3px solid rgb(234, 84, 79);
+    color:rgb(114, 168, 113);
+    border:3px solid rgb(114, 168, 113);
     padding:8px 3vw;
     width:50%;
     border-radius:80px;
@@ -195,19 +203,12 @@ header table {
     transition:0.4s ease-in-out;
 }
 .buttons:hover {
-    box-shadow:0px 10px 30px rgba(234, 84, 79, 0.8);
+    box-shadow:0px 10px 30px rgba(114, 168, 113, 0.8);
     cursor:pointer;
     color:#fff;
-    background:rgb(234, 84, 79);
+    background:rgb(114, 168, 113);
 }
-#particles-js {
-    width:100%;
-    height:95vh;
-    background:linear-gradient(0deg,rgba(234, 84, 79, 1),rgba(255, 102, 102, 1));
-        /*, url("https://images.unsplash.com/photo-1524797905120-92940d3a18d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60") center center;*/
-    background-size:cover;
-    background-repeat:no-repeat;
-}
+
 #work {
     width:92vw;
     padding:6vh 4vw;
@@ -215,7 +216,7 @@ header table {
 }
 #work h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(234, 84, 79);
+    border-bottom:4px solid rgb(114, 168, 113);
     width:6%;
 }
 #photos {
@@ -242,7 +243,7 @@ header table {
 }
 #bio h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(234, 84, 79);
+    border-bottom:4px solid rgb(114, 168, 113);
     width:8%;
 }
 #bio p {
@@ -255,7 +256,7 @@ header table {
 }
 #contact h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(234, 84, 79);
+    border-bottom:4px solid rgb(114, 168, 113);
     width:10%;
 }
 #contact table {
@@ -287,7 +288,7 @@ header table {
     font-weight:bold;
 }
 #footer a {
-    color:rgb(234, 84, 79);
+    color:rgb(114, 168, 113);
     text-decoration:none;
 }
 ::placeholder {
@@ -369,12 +370,12 @@ button:focus {
     .buttons {
         padding:8px 5vw;
         margin:4vh 1vw;
-        box-shadow:0px 10px 20px rgba(234, 84, 79, 0.8);
-        background:rgb(234, 84, 79);
+        box-shadow:0px 10px 20px rgba(114, 168, 113, 0.8);
+        background:rgb(114, 168, 113);
         color:#fff;
     }
     .buttons:hover {
-        box-shadow:0px 10px 40px rgba(234, 84, 79, 0.8);
+        box-shadow:0px 10px 40px rgba(114, 168, 113, 0.8);
         cursor:pointer;
     }
     #contact table tr td {
@@ -411,7 +412,7 @@ button:focus {
     }
     #navigation a:hover{
         color: #333333;
-        border-bottom:2px solid rgb(234, 84, 79);
+        border-bottom:2px solid rgb(114, 168, 113);
     }
 
 }
