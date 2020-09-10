@@ -116,7 +116,7 @@ header table {
     width:40%; /* how much the right image takes up */
 }
 #about { /* left side of homepage */
-	width: 60% !important;
+    width: 60% !important;
     height:95vh;
     display:flex;
     flex-direction:column;
@@ -144,15 +144,15 @@ header table {
 }
 #btn { /* the entire button line */
     width: 100%;
-	max-width: 550px;
+    max-width: 550px;
     white-space: nowrap;
 }
 #btn tr {
-	display: inline-flex;
-	width: 100%;
+    display: inline-flex;
+    width: 100%;
 }
 #btn tr td{
-	margin-bottom: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 #icon { /* the entire icon line */
     margin-top:3vh;
@@ -359,14 +359,14 @@ button:focus {
         text-align:center;
     }
     #btn tr{
-    	display: inline-flex;
-    	width: inherit;
-    	margin-bottom: 1.5vh;
-    	padding: 1.5vw;
-    	margin-left: auto;
+        display: inline-flex;
+        width: inherit;
+        margin-bottom: 1.5vh;
+        padding: 1.5vw;
+        margin-left: auto;
         margin-right: auto;
     }
-	.buttons {
+    .buttons {
         padding:8px 5vw;
         margin:4vh 1vw;
         box-shadow:0px 10px 20px rgba(234, 84, 79, 0.8);
