@@ -42,6 +42,9 @@ h1 {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
+   /*************/
+  /* Main Page */
+ /*************/
 header {
     width:92vw;
     padding:6vh 4vw;
@@ -57,44 +60,11 @@ header table {
 }
 #logo {
     width:20%;
-}
-#navigation {
-    width:80%;
-}
-#magnify {
-    width:100vw;
-    height:100vh;
-    background:rgba(0, 0, 0, 0.92);
-    position:fixed;
-    z-index:4;
-    display:none;
-    flex-direction: column;
-    justify-content:center;
-}
-#magnify h1 {
-    position:absolute;
-    top:0;
-    right:0;
-    margin:20px 40px;
-    color:#fff;
-    transition:0.4s ease-in-out;
-}
-#magnify h1:hover{
-    color:rgb(114, 168, 113);
-    cursor:pointer;
-}
-#img_here {
-    width:90%;
-    height:90%;
-    background-size:contain !important;
-    background-repeat:no-repeat !important;
-    margin:0px auto;
-}
-#logo {
     font-size:24px;
     color:rgb(114, 168, 113);
 }
 #navigation {
+    width:80%;
     text-align:right;
 }
 #navigation a {
@@ -108,16 +78,18 @@ header table {
 #navigation a:hover{
     border-bottom:2px solid #fff;
 }
+#main {
+    height: 100vh;
+}
 #top_part {
     width:100%;
-    border:2vh solid #fff;
 }
 #top_part tr td { /* homepage */
-    width:40%; /* how much the right image takes up */
+    width:50%; /* how much the right image takes up */
 }
 #particles-js {
     width:100%;
-    height:95vh;
+    height:100vh;
     background:linear-gradient(0deg,rgba(114, 168, 113, 1),rgba(58, 95, 58, 1));
         /*, url("https://images.unsplash.com/photo-1524797905120-92940d3a18d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60") center center;*/
     background-size:cover;
@@ -209,16 +181,27 @@ header table {
     background:rgb(114, 168, 113);
 }
 
-#work {
+   /***********/
+  /* Content */
+ /***********/
+ #work, #bio, #contact {
     width:92vw;
     padding:6vh 4vw;
     font-weight:bold;
 }
-#work h1 {
+#work h1, #bio h1, #contact h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(114, 168, 113);
     width:6%;
 }
+#bio p, #contact p {
+    color:#666666;
+    margin-left: 3%;
+}
+
+   /********/
+  /* Work */
+ /********/
 #photos {
     width:100%;
     columns:3;
@@ -236,29 +219,25 @@ header table {
     transform: scale(1.1);
     cursor: pointer;
 }
-#bio {
-    width:92vw;
-    padding:6vh 4vw;
-    font-weight:bold;
+
+   /*************/
+  /* Bio/About */
+ /*************/
+ #bio_table img {
+    width: 90%;
 }
-#bio h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(114, 168, 113);
-    width:8%;
+#bio_table {
+    padding:10px 20px !important;
+    /* background: rgb(139, 177, 139); */
 }
-#bio p {
-    color:#666666;
-    margin-left: 3%;
+#bio_table tr td {
+    /* background: rgb(206, 172, 172); */
+    width: 50%;
 }
-#contact {
-    width:92vw;
-    padding:6vh 4vw;
-}
-#contact h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(114, 168, 113);
-    width:10%;
-}
+
+   /***********/
+  /* Contact */
+ /***********/
 #contact table {
     width:100%;
 }
@@ -286,46 +265,36 @@ header table {
     padding:10vh 0px;
     text-align:center;
     font-weight:bold;
-}
-#footer a {
-    color:rgb(114, 168, 113);
-    text-decoration:none;
-}
-::placeholder {
-    color:#000;
-}
-button:focus {
-    outline:none;
-}
-::-webkit-scrollbar {
-    width:5px;
-    height:5px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0); 
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0,0.8); 
+    background: rgb(114, 168, 113);
 }
 
+   /**************/
+  /* Responsive */
+ /**************/
 @media (max-width: 1000px){
-    #photos {
-        columns:2;
-        column-gap:5%;
+    #header {
+        width: 100%;
+        display: center;
+        padding:4vh 0vw;
+        position:absolute;
+        z-index: 5;
     }
-    #photos img {
-        margin:2% 0px;
+    #header table tr td {
+        width:100%;
+        display:block;
+        text-align:center;
+        padding:15px 0px;
     }
-    #photos img:hover {
-        transform: scale(1);
-        cursor: pointer;
+    #navigation a {
+        color:#666666;
     }
+    #navigation a:hover{
+        color: #333333;
+        border-bottom:2px solid rgb(114, 168, 113);
+    }
+    
     #particles-js {
         position: relative;
-        height: 100vh;
         animation: none;
         z-index: 1;
         background: #ffffff;
@@ -350,7 +319,6 @@ button:focus {
     #about h1, #about h4{
         padding-left: 0%;
     }
-
     #about table {
         width:100%; /* holy shit idk how this works but it does */
         margin-left: auto;
@@ -360,7 +328,6 @@ button:focus {
         text-align:center;
     }
     #btn tr{
-        display: inline-flex;
         width: inherit;
         margin-bottom: 1.5vh;
         padding: 1.5vw;
@@ -376,17 +343,21 @@ button:focus {
     }
     .buttons:hover {
         box-shadow:0px 10px 40px rgba(114, 168, 113, 0.8);
-        cursor:pointer;
     }
-    #contact table tr td {
-        width:100%;
-        display:block;
-    }
-    #inner_table tr td{
-        padding:10px 0px !important;
-    }
+    
     #work h1 {
         width:19%;
+    }
+    #photos {
+        columns:2;
+        column-gap:5%;
+    }
+    #photos img {
+        margin:2% 0px;
+    }
+    #photos img:hover {
+        transform: scale(1);
+        cursor: pointer;
     }
     #bio h1 {
         width:25%;
@@ -394,25 +365,12 @@ button:focus {
     #contact h1 {
         width:33%;
     }
-    header {
-        width: 100%;
-        display: center;
-        padding:4vh 0vw;
-        position:absolute;
-        z-index: 5;
-    }
-    #header table tr td {
+    #contact table tr td {
         width:100%;
         display:block;
-        text-align:center;
-        padding:15px 0px;
     }
-    #navigation a {
-        color:#666666;
-    }
-    #navigation a:hover{
-        color: #333333;
-        border-bottom:2px solid rgb(114, 168, 113);
+    #inner_table tr td{
+        padding:10px 0px !important;
     }
 
 }
